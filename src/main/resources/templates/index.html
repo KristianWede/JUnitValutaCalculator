@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my site!</title>
+</head>
+<body>
+<form method="get" action="/convertValues">
+    <input name="valuta1" type="text" placeholder="USD, DKK...">
+    <br/>
+    <br/>
+    <input name="value" type="number" placeholder="Indsæt værdi...">
+    <br/>
+    <br/>
+    <input name="valuta2" type="text" placeholder="USD, DKK...">
+
+    <input type="submit" value="Send">
+</form>
+
+    <p th:text="${result}"> ZAMN<p/>
+
+</body>
+</html>
