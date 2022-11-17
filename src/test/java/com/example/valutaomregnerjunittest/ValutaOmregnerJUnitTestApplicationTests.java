@@ -1,6 +1,6 @@
 package com.example.valutaomregnerjunittest;
 
-import com.example.valutaomregnerjunittest.repository.ValutaOmregner;
+import com.example.valutaomregnerjunittest.repository.ValutaOmregnerRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ValutaOmregnerJUnitTestApplicationTests {
 
-    ValutaOmregner valutaOmregner;
+    ValutaOmregnerRepository valutaOmregner;
 
     @BeforeEach
     void setUp(){
-        valutaOmregner = new ValutaOmregner();
+        valutaOmregner = new ValutaOmregnerRepository();
     }
 
     @AfterEach

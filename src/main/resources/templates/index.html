@@ -5,7 +5,7 @@
     <title>Welcome to my site!</title>
 </head>
 <body>
-<form method="get" action="/convertValues">
+<form method="post" action="/convertedValuta">
     <input name="valuta1" type="text" placeholder="USD, DKK...">
     <br/>
     <br/>
@@ -16,8 +16,17 @@
 
     <input type="submit" value="Send">
 </form>
-
-    <p th:text="${result}"> ZAMN<p/>
-
+    <th>
+        <p th:text="${session.convert}"><p/>
+    </th>
+    <th>
+        <p th:text="${session.firstValuta}"><p/>
+    </th>
+    <th>
+        <p th:text="${session.secondValuta}"><p/>
+    </th>
+    <th>
+        <p th:text="${session.result}"><p/>
+    </th>
 </body>
 </html>

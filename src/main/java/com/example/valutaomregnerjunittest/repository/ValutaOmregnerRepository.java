@@ -2,10 +2,8 @@ package com.example.valutaomregnerjunittest.repository;
 
 import org.springframework.stereotype.Repository;
 
-import java.io.FileReader;
-
 @Repository
-public class ValutaOmregner {
+public class ValutaOmregnerRepository {
 
     public double exchange(String fromCurrency, String toCurrency, double amount){
 
